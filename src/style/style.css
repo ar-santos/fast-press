@@ -104,7 +104,7 @@ header {
     margin: 5px;
 }
 
-.carrosel-banner {
+.site-app {
     position: absolute;
     display: flex;
     z-index: 100;
@@ -124,7 +124,7 @@ header {
     transform: translateX(0);
 }
 
-.carrosel-banner img {
+.site-app img {
     object-fit: cover;    
 }
 
@@ -162,6 +162,16 @@ header {
     cursor: pointer;
 }
 
+.itensDoSite {
+    display: flex;
+    margin-top: 33px;
+    overflow: auto hidden;
+    color: rgb(64, 64, 64);
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    text-align: center;
+}
+
 @media screen and (max-width: 771px){
 
     .btns-inform {
@@ -178,7 +188,7 @@ header {
         margin: 5px;
     }
 
-    .carrosel-banner {
+    .site-app {
         width: 100%;
         transform: translate(0%);
     }
