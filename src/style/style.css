@@ -182,7 +182,10 @@ header {
     align-items: center;
     justify-content:space-between;
     border-radius: 10px;
+}
 
+.containerItem {
+    cursor: pointer;
 }
 
 .item-porcentagem img {
@@ -247,6 +250,7 @@ header {
     gap: 2rem 3rem;
     padding: 2rem 0 0 0rem;
     align-items: center;
+    cursor: pointer;
     border: 0px solid #ccc;
 }
 
@@ -324,6 +328,61 @@ header {
     width: 4.7em;
 }
 
+.compra-produto {
+    display: none;
+    width: 100%;
+}
+
+.nome-produto {
+   margin-bottom: 10px;
+   color: rgb(64, 64, 64);
+}
+
+.container-inform-compra img {
+    max-height: 55vh;
+}
+
+.informacoes-compra{
+    font-size: 20px;
+    color: rgb(64, 64, 64);
+    margin-bottom: 5px;
+}
+
+.preco-item {
+    text-align: right;
+    width: 100%;
+    font-size: 25px;
+    transform: translate(-0px,-200px);
+}
+
+.preco-alto {
+    margin-top: 10px;
+}
+
+.parcela {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1121px) {
+    .container-inform-compra img {
+        width: 100%;
+        height: inherit;
+        object-fit: contain;
+        margin: auto;
+        max-height: 40vh;
+    }
+
+    .preco-item {
+        text-align: left;
+        align-items: center;
+        transform: translate(0px,0px);
+    }
+
+    .nome-produto {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 771px){
 
     .btns-inform {
@@ -358,6 +417,7 @@ header {
     .btn-carrosel-right{
         width: 8%;
     }
+
 }
 
 input[type="search"]::-webkit-search-decoration,
