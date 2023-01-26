@@ -376,7 +376,7 @@ header {
     cursor: pointer;
     color: red; 
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .btns-compra {
@@ -434,6 +434,8 @@ header {
     .container-produto {
         flex-direction: column;
         width: 100%;
+        margin-top: 30px;
+        gap: 60px;
         justify-content: center;
         align-items: center;
     }
