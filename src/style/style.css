@@ -397,7 +397,7 @@ header {
     margin-bottom: 17px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 599px){
 
     .btns-inform {
         display: none;
