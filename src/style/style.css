@@ -370,6 +370,11 @@ header {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   max-width: 390px;
+}
+
+.avaliacaoStar {
+    width: 100%;
 }
 
 .favorite {
@@ -378,6 +383,7 @@ header {
     color: red; 
     border-radius: 10px;
     margin-right: 20px;
+    width: 100%;
 }
 
 .btns-compra {
