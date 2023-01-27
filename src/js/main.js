@@ -14,6 +14,8 @@ let containerBola = document.getElementById('container-bola')
 let containerRelogio = document.getElementById('container-relogio')
 let containerCelularTwo = document.getElementById('container-celularTwo')
 
+let buttonVoltar = document.getElementById('btn-voltar')
+
 function carroselGallery() {
     funcoesBanner.carrosel()
 }
@@ -81,3 +83,9 @@ function exibirAbaCompraTwo() {
 }
 
 containerCelularTwo.addEventListener('click', exibirAbaCompraTwo)
+
+function voltarPaginaAnterior() {
+    abasComprar.funcaoParaVoltarPagina()
+}
+
+buttonVoltar.addEventListener('click', voltarPaginaAnterior)

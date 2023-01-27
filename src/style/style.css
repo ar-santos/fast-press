@@ -360,6 +360,16 @@ header {
     max-width: 300px;
 }
 
+.btn-voltar {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-voltar button {
+    border: none;
+    color: rgb(110, 10, 214);
+}
+
 .select-img img {
     width: 100%;
 }
@@ -417,7 +427,7 @@ header {
     margin-bottom: 17px;
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 799px){
 
     .btns-inform {
         display: none;

@@ -28,12 +28,9 @@ let containerCompraCelularTwo = document.getElementById('compra-produto-celularT
 function abaCompraCelular() {
     if (containerCelular.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerCelular.style.display = 'block';
-        containerCompraCelular.style.display = 'none';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraFone.style.display = 'none';
         containerCompraNotebook.style.display = 'none';
@@ -49,12 +46,9 @@ function abaCompraCelular() {
 function abaCompraTenis() {
     if (containerTenis.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerTenis.style.display = 'block';
-        containerCompraTenis.style.display = 'none';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerTenis.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraFone.style.display = 'none';
         containerCompraNotebook.style.display = 'none';
@@ -70,11 +64,9 @@ function abaCompraTenis() {
 function abaCompraFone() {
     if (containerFone.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerFone.style.display = 'block';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerFone.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraNotebook.style.display = 'none';
@@ -90,12 +82,9 @@ function abaCompraFone() {
 function abaCompraNotebook() {
     if (containerNotebook.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerNotebok.style.display = 'block';
-        containerCompraTenis.style.display = 'none';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerFone.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraFone.style.display = 'none';
@@ -111,12 +100,9 @@ function abaCompraNotebook() {
 function abaCompraMouse() {
     if (containerMouse.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerMouse.style.display = 'block';
-        containerCompraTenis.style.display = 'none';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerFone.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraFone.style.display = 'none';
@@ -132,11 +118,9 @@ function abaCompraMouse() {
 function abaCompraBola() {
     if (containerBola.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerBola.style.display = 'block';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerFone.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraFone.style.display = 'none';
@@ -152,11 +136,9 @@ function abaCompraBola() {
 function abaCompraRelogio() {
     if (containerRelogio.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerRelogio.style.display = 'block';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerFone.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraFone.style.display = 'none';
@@ -172,11 +154,9 @@ function abaCompraRelogio() {
 function abaCompraCelularTwo() {
     if (containerCelularTwo.style.display == 'block') {
         siteApp.style.display = 'block';
-        containerCelularTwo.style.display = 'block';
         compraProduto.style.display = 'none';
     }else{
         siteApp.style.display = 'none';
-        containerFone.style.display = 'none';
         containerCompraCelular.style.display = 'none';
         containerCompraTenis.style.display = 'none';
         containerCompraFone.style.display = 'none';
@@ -185,6 +165,16 @@ function abaCompraCelularTwo() {
         containerCompraBola.style.display = 'none';
         containerCompraRelogio.style.display = 'none';
         containerCompraCelularTwo.style.display = 'block';
+        compraProduto.style.display = 'block';
+    }
+}
+
+function funcaoParaVoltarPagina() {
+    if (siteApp.style.display = 'none'){
+        siteApp.style.display = 'block';
+        compraProduto.style.display = 'none';
+    }else{
+        siteApp.style.display = 'none';
         compraProduto.style.display = 'block';
     }
 }
@@ -198,6 +188,7 @@ const abasComprar = {
     abaCompraBola,
     abaCompraRelogio,
     abaCompraCelularTwo,
+    funcaoParaVoltarPagina,
 }
 
 export default abasComprar
