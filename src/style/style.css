@@ -328,7 +328,15 @@ header {
     width: 4.7em;
 }
 
-.compra-produto {
+.compra-produto{
+    display: none;
+}
+
+.compra-produto-celular {
+    display: none;
+}
+
+.compra-produto-tenis {
     display: none;
 }
 
@@ -358,6 +366,12 @@ header {
 
 .right-side {
     width: 100%;
+}
+
+.right-side h1 {
+    color: rgb(64, 64, 64);
+    line-height: 1.25;
+    font-weight: 400;
 }
 
 .content {
