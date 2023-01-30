@@ -368,6 +368,7 @@ header {
 .btn-voltar button {
     border: none;
     color: rgb(110, 10, 214);
+    background-color: rgb(244, 244, 244);
 }
 
 .select-img img {
@@ -427,7 +428,12 @@ header {
     padding: 10px 10px 10px 10px;
     border: none;
     cursor: pointer;
+    transition:1s;
     margin-bottom: 17px;
+}
+
+.btn-comprar:hover{
+    background: rgba(109, 10, 214, 0.725);
 }
 
 @media screen and (max-width: 799px){
