@@ -25,170 +25,264 @@ let containerCompraRelogio = document.getElementById('compra-produto-relogio')
 let containerCelularTwo = document.getElementById('container-celularTwo')
 let containerCompraCelularTwo = document.getElementById('compra-produto-celularTwo')
 
-function abaCompraCelular() {
-    if (containerCelular.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraCelular.style.display = 'block';
-        compraProduto.style.display = 'block';
+let buttonVoltar = document.getElementById('btn-voltar')
+
+let favoritaProduto = document.getElementById('btn-favorita-produto')
+
+class AbaCompraCelular {
+    constructor() {
+      this.addClickEvent();
+    }
+
+    addClickEvent() {
+        function exibirAbaCelular() {
+            if (containerCelular.style.display == 'block') {
+             siteApp.style.display = 'block';
+             compraProduto.style.display = 'none';
+            }else{
+             siteApp.style.display = 'none';
+             containerCompraTenis.style.display = 'none';
+             containerCompraFone.style.display = 'none';
+             containerCompraNotebook.style.display = 'none';
+             containerCompraMouse.style.display = 'none';
+             containerCompraBola.style.display = 'none';
+             containerCompraRelogio.style.display = 'none';
+             containerCompraCelularTwo.style.display = 'none';
+             containerCompraCelular.style.display = 'block';
+             compraProduto.style.display = 'block';
+            }
+        }
+        containerCelular.addEventListener('click', exibirAbaCelular)
+    }
+}
+class AbaCompraTenis {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+      function exibirAbaTenis() {
+        if (containerTenis.style.display == 'block') {
+          siteApp.style.display = 'block';
+          compraProduto.style.display = 'none';
+        }else{
+          siteApp.style.display = 'none';
+          containerCompraCelular.style.display = 'none';
+          containerCompraFone.style.display = 'none';
+          containerCompraNotebook.style.display = 'none';
+          containerCompraMouse.style.display = 'none';
+          containerCompraBola.style.display = 'none';
+          containerCompraRelogio.style.display = 'none';
+          containerCompraCelularTwo.style.display = 'none';
+          containerCompraTenis.style.display = 'block';
+          compraProduto.style.display = 'block';
+        }
+      }
+      containerTenis.addEventListener('click', exibirAbaTenis);
+    }
+}
+class AbaCompraFone {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function abaCompraFone() {
+            if (containerFone.style.display == 'block') {
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                containerCompraCelular.style.display = 'none';
+                containerCompraTenis.style.display = 'none';
+                containerCompraNotebook.style.display = 'none';
+                containerCompraMouse.style.display = 'none';
+                containerCompraBola.style.display = 'none';
+                containerCompraRelogio.style.display = 'none';
+                containerCompraCelularTwo.style.display = 'none';
+                containerCompraFone.style.display = 'block';
+                compraProduto.style.display = 'block';
+            }
+        }
+        containerFone.addEventListener('click', abaCompraFone);
+    }
+}
+class AbaCompraNotebook {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function abaCompraNotebook() {
+            if (containerNotebook.style.display == 'block') {
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                containerCompraCelular.style.display = 'none';
+                containerCompraTenis.style.display = 'none';
+                containerCompraFone.style.display = 'none';
+                containerCompraMouse.style.display = 'none';
+                containerCompraBola.style.display = 'none';
+                containerCompraRelogio.style.display = 'none';
+                containerCompraCelularTwo.style.display = 'none';
+                containerCompraNotebook.style.display = 'block';
+                compraProduto.style.display = 'block';
+            }
+        }
+        containerNotebook.addEventListener('click', abaCompraNotebook);
+    }
+}
+class AbaCompraMouse {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function abaCompraMouse() {
+            if (containerMouse.style.display == 'block') {
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                containerCompraCelular.style.display = 'none';
+                containerCompraTenis.style.display = 'none';
+                containerCompraFone.style.display = 'none';
+                containerCompraNotebook.style.display = 'none';
+                containerCompraBola.style.display = 'none';
+                containerCompraRelogio.style.display = 'none';
+                containerCompraCelularTwo.style.display = 'none';
+                containerCompraMouse.style.display = 'block';
+                compraProduto.style.display = 'block';
+            }
+        }
+        containerMouse.addEventListener('click', abaCompraMouse);
+    }
+}
+class AbaCompraBola {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function abaCompraBola() {
+            if (containerBola.style.display == 'block') {
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                containerCompraCelular.style.display = 'none';
+                containerCompraTenis.style.display = 'none';
+                containerCompraFone.style.display = 'none';
+                containerCompraNotebook.style.display = 'none';
+                containerCompraMouse.style.display = 'none';
+                containerCompraRelogio.style.display = 'none';
+                containerCompraCelularTwo.style.display = 'none';
+                containerCompraBola.style.display = 'block';
+                compraProduto.style.display = 'block';
+            }
+        }
+        containerBola.addEventListener('click', abaCompraBola);
+    }
+}
+class AbaCompraRelogio {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function abaCompraRelogio() {
+            if (containerRelogio.style.display == 'block') {
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                containerCompraCelular.style.display = 'none';
+                containerCompraTenis.style.display = 'none';
+                containerCompraFone.style.display = 'none';
+                containerCompraNotebook.style.display = 'none';
+                containerCompraMouse.style.display = 'none';
+                containerCompraBola.style.display = 'none';
+                containerCompraCelularTwo.style.display = 'none';
+                containerCompraRelogio.style.display = 'block';
+                compraProduto.style.display = 'block';
+            }
+        }
+        containerRelogio.addEventListener('click', abaCompraRelogio);
+    }
+}
+class AbaComprarCelularTwo {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function abaCompraCelularTwo() {
+            if (containerCelularTwo.style.display == 'block') {
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                containerCompraCelular.style.display = 'none';
+                containerCompraTenis.style.display = 'none';
+                containerCompraFone.style.display = 'none';
+                containerCompraNotebook.style.display = 'none';
+                containerCompraMouse.style.display = 'none';
+                containerCompraBola.style.display = 'none';
+                containerCompraRelogio.style.display = 'none';
+                containerCompraCelularTwo.style.display = 'block';
+                compraProduto.style.display = 'block';
+            }
+        }
+        containerCelularTwo.addEventListener('click', abaCompraCelularTwo);
+    }
+}
+class BtnVoltarPagina {
+    constructor() {
+      this.addClickEvent();
+    }
+  
+    addClickEvent() {
+        function funcaoParaVoltarPagina() {
+            if (siteApp.style.display = 'none'){
+                siteApp.style.display = 'block';
+                compraProduto.style.display = 'none';
+            }else{
+                siteApp.style.display = 'none';
+                compraProduto.style.display = 'block';
+            }
+        }
+        buttonVoltar.addEventListener('click', funcaoParaVoltarPagina);
     }
 }
 
-function abaCompraTenis() {
-    if (containerTenis.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraTenis.style.display = 'block';
-        compraProduto.style.display = 'block';
+class salvaItemLoja {
+    constructor() {
+        this.addClickEvent();
     }
-}
 
-function abaCompraFone() {
-    if (containerFone.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraFone.style.display = 'block';
-        compraProduto.style.display = 'block';
-    }
-}
-
-function abaCompraNotebook() {
-    if (containerNotebook.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraNotebook.style.display = 'block';
-        compraProduto.style.display = 'block';
-    }
-}
-
-function abaCompraMouse() {
-    if (containerMouse.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraMouse.style.display = 'block';
-        compraProduto.style.display = 'block';
-    }
-}
-
-function abaCompraBola() {
-    if (containerBola.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraBola.style.display = 'block';
-        compraProduto.style.display = 'block';
-    }
-}
-
-function abaCompraRelogio() {
-    if (containerRelogio.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'none';
-        containerCompraRelogio.style.display = 'block';
-        compraProduto.style.display = 'block';
-    }
-}
-
-function abaCompraCelularTwo() {
-    if (containerCelularTwo.style.display == 'block') {
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        containerCompraCelular.style.display = 'none';
-        containerCompraTenis.style.display = 'none';
-        containerCompraFone.style.display = 'none';
-        containerCompraNotebook.style.display = 'none';
-        containerCompraMouse.style.display = 'none';
-        containerCompraBola.style.display = 'none';
-        containerCompraRelogio.style.display = 'none';
-        containerCompraCelularTwo.style.display = 'block';
-        compraProduto.style.display = 'block';
-    }
-}
-
-function funcaoParaVoltarPagina() {
-    if (siteApp.style.display = 'none'){
-        siteApp.style.display = 'block';
-        compraProduto.style.display = 'none';
-    }else{
-        siteApp.style.display = 'none';
-        compraProduto.style.display = 'block';
+    addClickEvent() {
+        favoritaProduto.addEventListener("click", () => {
+            if (favoritaProduto.style.color == "rgb(155, 155, 155)") {
+                favoritaProduto.style.color = "red";
+            } else {
+                favoritaProduto.style.color = "rgb(155, 155, 155)";
+            }
+        });
     }
 }
 
 const abasComprar = {
-    abaCompraCelular,
-    abaCompraTenis,
-    abaCompraFone,
-    abaCompraNotebook,
-    abaCompraMouse,
-    abaCompraBola,
-    abaCompraRelogio,
-    abaCompraCelularTwo,
-    funcaoParaVoltarPagina,
+    AbaCompraCelular,
+    AbaCompraTenis,
+    AbaCompraFone,
+    AbaCompraNotebook,
+    AbaCompraMouse,
+    AbaCompraBola,
+    AbaCompraRelogio,
+    AbaComprarCelularTwo,
+    BtnVoltarPagina,
+    salvaItemLoja,
 }
 
 export default abasComprar

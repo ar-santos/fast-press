@@ -5,17 +5,6 @@ import abasComprar from "./purchase.js"
 let btnCarroseLeft = document.getElementById('btn-carrosel-left')
 let btnCarroselRight = document.getElementById('btn-carrosel-right')
 
-let containerCelular = document.getElementById('container-celular')
-let containerTenis = document.getElementById('container-tenis')
-let containerFone = document.getElementById('container-fone')
-let containerNotebook = document.getElementById('container-notebook')
-let containerMouse = document.getElementById('container-mouse')
-let containerBola = document.getElementById('container-bola')
-let containerRelogio = document.getElementById('container-relogio')
-let containerCelularTwo = document.getElementById('container-celularTwo')
-
-let buttonVoltar = document.getElementById('btn-voltar')
-
 function carroselGallery() {
     funcoesBanner.carrosel()
 }
@@ -36,56 +25,13 @@ btnCarroselRight.addEventListener('click', executaFuncaoBtnRight)
 
 avaliacaoClientes()
 
-function exibirAbaCompraCelular() {
-    abasComprar.abaCompraCelular()
-}
-
-containerCelular.addEventListener('click', exibirAbaCompraCelular)
-
-function exibirAbaCompraTenis() {
-    abasComprar.abaCompraTenis()
-}
-
-containerTenis.addEventListener('click', exibirAbaCompraTenis)
-
-function exibirAbaCompraFone() {
-    abasComprar.abaCompraFone()
-}
-
-containerFone.addEventListener('click', exibirAbaCompraFone)
-
-function exibirAbaCompraNotebook() {
-    abasComprar.abaCompraNotebook()
-}
-
-containerNotebook.addEventListener('click', exibirAbaCompraNotebook)
-
-function exibirAbaCompraMouse() {
-    abasComprar.abaCompraMouse()
-}
-
-containerMouse.addEventListener('click', exibirAbaCompraMouse)
-
-function exibirAbaCompraBola() {
-    abasComprar.abaCompraBola()
-}
-
-containerBola.addEventListener('click', exibirAbaCompraBola)
-
-function exibirAbaCompraRelogio() {
-    abasComprar.abaCompraRelogio()
-}
-
-containerRelogio.addEventListener('click', exibirAbaCompraRelogio)
-
-function exibirAbaCompraTwo() {
-    abasComprar.abaCompraCelularTwo()
-}
-
-containerCelularTwo.addEventListener('click', exibirAbaCompraTwo)
-
-function voltarPaginaAnterior() {
-    abasComprar.funcaoParaVoltarPagina()
-}
-
-buttonVoltar.addEventListener('click', voltarPaginaAnterior)
+new abasComprar.AbaCompraCelular();
+new abasComprar.AbaCompraTenis();
+new abasComprar.AbaCompraFone();
+new abasComprar.AbaCompraNotebook();
+new abasComprar.AbaCompraMouse();
+new abasComprar.AbaCompraBola();
+new abasComprar.AbaCompraRelogio();
+new abasComprar.AbaComprarCelularTwo();
+new abasComprar.BtnVoltarPagina();
+new abasComprar.salvaItemLoja();

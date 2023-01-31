@@ -402,10 +402,15 @@ header {
     width: 100%;
 }
 
-.favorite {
+.btn-favorite{
     border: none;
+    outline: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.favorite {
     cursor: pointer;
-    color: red; 
+    color: rgb(155, 155, 155); 
     border-radius: 10px;
     margin-right: 20px;
     width: 100%;
