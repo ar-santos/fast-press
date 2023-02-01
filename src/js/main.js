@@ -35,3 +35,4 @@ new abasComprar.AbaCompraRelogio();
 new abasComprar.AbaComprarCelularTwo();
 new abasComprar.BtnVoltarPagina();
 new abasComprar.salvaItemLoja();
+new abasComprar.adicionarItemAoCarrinho();

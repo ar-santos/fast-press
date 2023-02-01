@@ -29,6 +29,10 @@ let buttonVoltar = document.getElementById('btn-voltar')
 
 let favoritaProduto = document.getElementById('btn-favorita-produto')
 
+
+let btnAdicionarNoCarrinho = document.getElementById('btn-carrinho')
+let abaItemNoCarrinho = document.getElementById('produto-carrinho')
+let btnVoltarCarrinho = document.getElementById('btn-voltar-carrinho')
 class AbaCompraCelular {
     constructor() {
       this.addClickEvent();
@@ -255,7 +259,6 @@ class BtnVoltarPagina {
         buttonVoltar.addEventListener('click', funcaoParaVoltarPagina);
     }
 }
-
 class salvaItemLoja {
     constructor() {
         this.addClickEvent();
@@ -271,6 +274,26 @@ class salvaItemLoja {
         });
     }
 }
+class adicionarItemAoCarrinho {
+    constructor() {
+        this.addClickEvent();
+    }
+
+    addClickEvent() {
+        btnAdicionarNoCarrinho.addEventListener("click", () => {
+            if (compraProduto.style.display = 'block') {
+                compraProduto.style.display = 'none';
+                abaItemNoCarrinho.style.display = 'block';
+            }
+        })
+        btnVoltarCarrinho.addEventListener("click", () => {
+            if (compraProduto.style.display = 'none') {
+                compraProduto.style.display = 'block';
+                abaItemNoCarrinho.style.display = 'none';
+            }
+        })
+    }
+}
 
 const abasComprar = {
     AbaCompraCelular,
@@ -283,6 +306,7 @@ const abasComprar = {
     AbaComprarCelularTwo,
     BtnVoltarPagina,
     salvaItemLoja,
+    adicionarItemAoCarrinho,
 }
 
 export default abasComprar
