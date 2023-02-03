@@ -638,6 +638,14 @@ header {
         display: none;
     }
 
+    .produtosSimilares {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        width: 90%;
+    }
+
     .produtoCarrinho {
         justify-content: center;
         align-items: center;
