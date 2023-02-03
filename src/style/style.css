@@ -51,14 +51,6 @@ header {
     transform: translate(-150px);
 }
 
-@media screen and (max-width: 1285px){
-
-    .btns-inform {
-        display: none;
-    }
-
-}
-
 .sessão {
     width: 100px;
     margin: 10.4px;
@@ -502,16 +494,13 @@ header {
     margin-bottom: 20px;
 }
 
-.right-side-carrinho {
-    width: 100%;
-}
-
 .content-carrinho h1 {
     color: #404040;
 }
 
 .preco-baixo-carrinho {
     color: rgba(109, 10, 214, 0.725);
+    margin-top: 5px;
 }
 
 .btn-adicionar-carrinho {
@@ -533,14 +522,16 @@ header {
 
 .finaliza-carrinho {
     display: flex;
-    justify-content: center;
-    width: 96%;
+    justify-content: right;
+    width: 94%;
     background-color: rgb(255, 255, 255);
 }
 
 .finaliza-carrinho h1{
     margin: 10px;
+    width: 16.8%;
     color: #404040;
+    text-align: center;
 }
 
 .img-carrinho-compra{
@@ -583,8 +574,8 @@ header {
 
 .produtoCarrinho{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 95%;
     gap: 30px;
     margin-bottom: 20px;
 }
@@ -600,13 +591,29 @@ header {
 
 .finalizar-compra {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
     width: 95%;
+}
+
+.finalizar-compra h1 {
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    color: #404040;
+}
+
+.preco-subtotal {
+    display: flex;
+    color: rgb(110, 10, 214);
+    margin-left: 6px;
 }
 
 .finalizar-compra button {
     display: flex;
-    width: 50%;
+    width: 224px;
+    height: 40px;
     border-radius: 10px;
     color: #fff;
     background: #58c22e;
@@ -616,6 +623,48 @@ header {
     border: none;
     cursor: pointer;
     margin-bottom: 17px;
+}
+
+.quantity-carrinho {
+    width: 65px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1285px){
+
+    .btns-inform {
+        display: none;
+    }
+
+    .produtoCarrinho {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .finalizar-compra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .finaliza-carrinho {
+        display: flex;
+        justify-content: right;
+        width: 94%;
+        height: 2px;
+        background-color: rgb(110, 10, 214);
+    }
+
+    .finaliza-carrinho h1 {
+        display: none;
+    }
+      
 }
 
 @media screen and (max-width: 799px){
