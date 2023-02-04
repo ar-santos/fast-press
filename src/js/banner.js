@@ -14,21 +14,25 @@ function carousel() {
 }
 
 function btnLeftBanner() {
+    clearInterval(intervalId);
     idx--;
     if(idx < 0) {
         idx = img.length - 1;
     }
 
     bannerimgs.style.transform = `translateX(-${idx * 100}%)`;
+    intervalId = setInterval(carousel, 5800);
 }
 
 function btnRightBanner() {
+    clearInterval(intervalId);
     idx++;
     if(idx >= img.length) {
         idx = 0;
     }
 
     bannerimgs.style.transform = `translateX(-${idx * 100}%)`;
+    intervalId = setInterval(carousel, 5800);
 }
 
 intervalId = setInterval(carousel, 5800);
