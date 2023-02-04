@@ -6,7 +6,7 @@ let btnCarroseLeft = document.getElementById('btn-carrosel-left')
 let btnCarroselRight = document.getElementById('btn-carrosel-right')
 
 function carroselGallery() {
-    funcoesBanner.carrosel()
+    funcoesBanner.carousel()
 }
 
 carroselGallery()
