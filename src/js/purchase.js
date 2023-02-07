@@ -264,16 +264,14 @@ class salvaItemLoja {
     addClickEvents() {
         for (let i = 1; i <= 8; i++) {
             const button = document.querySelector(`#favoritaProduto${i}`);
+            button.style.color = "rgb(155, 155, 155)";
             button.addEventListener("click", () => {
-                if (button.style.color === "rgb(155, 155, 155)") {
-                    button.style.color = "red";
-                } else {
-                    button.style.color = "rgb(155, 155, 155)";
-                }
+                button.style.color = button.style.color === "rgb(155, 155, 155)" ? "red" : "rgb(155, 155, 155)";
             });
         }
     }
 }
+
 class adicionarItemAoCarrinho {
     constructor() {
         this.addClickEvent();
