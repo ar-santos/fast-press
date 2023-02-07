@@ -27,9 +27,6 @@ let containerCompraCelularTwo = document.getElementById('compra-produto-celularT
 
 let buttonVoltar = document.getElementById('btn-voltar')
 
-let favoritaProduto = document.getElementById('btn-favorita-produto')
-
-
 let btnAdicionarNoCarrinho = document.getElementById('btn-carrinho')
 let abaItemNoCarrinho = document.getElementById('produto-carrinho')
 let btnVoltarCarrinho = document.getElementById('btn-voltar-carrinho')
@@ -261,17 +258,20 @@ class BtnVoltarPagina {
 }
 class salvaItemLoja {
     constructor() {
-        this.addClickEvent();
+        this.addClickEvents();
     }
 
-    addClickEvent() {
-        favoritaProduto.addEventListener("click", () => {
-            if (favoritaProduto.style.color == "rgb(155, 155, 155)") {
-                favoritaProduto.style.color = "red";
-            } else {
-                favoritaProduto.style.color = "rgb(155, 155, 155)";
-            }
-        });
+    addClickEvents() {
+        for (let i = 1; i <= 8; i++) {
+            const button = document.querySelector(`#favoritaProduto${i}`);
+            button.addEventListener("click", () => {
+                if (button.style.color === "rgb(155, 155, 155)") {
+                    button.style.color = "red";
+                } else {
+                    button.style.color = "rgb(155, 155, 155)";
+                }
+            });
+        }
     }
 }
 class adicionarItemAoCarrinho {
