@@ -28,8 +28,40 @@ let containerCompraCelularTwo = document.getElementById('compra-produto-celularT
 let buttonVoltar = document.getElementById('btn-voltar')
 
 let btnAdicionarNoCarrinho = document.getElementById('btn-carrinho')
-let abaItemNoCarrinho = document.getElementById('produto-carrinho')
+let containerCarrinhoCelular = document.getElementById('carrinho-celular')
 let btnVoltarCarrinho = document.getElementById('btn-voltar-carrinho')
+
+
+let btnAdicionarNoCarrinhoTenis = document.getElementById('btn-adicionar-carrinho-tenis')
+let containerCarrinhoTenis = document.getElementById('carrinho-tenis')
+let btnVoltarCarrinhoTenis = document.getElementById('btn-voltar-carrinho-tenis')
+
+let btnAdicionarNoCarrinhofone = document.getElementById('btn-adicionar-carrinho-fone')
+let containerCarrinhoFone = document.getElementById('carrinho-fone')
+let btnVoltarCarrinhoFone = document.getElementById('btn-voltar-carrinho-fone')
+
+let btnAdicionarNoCarrinhoNotebook = document.getElementById('btn-adicionar-carrinho-notebook')
+let containerCarrinhoNotebook = document.getElementById('carrinho-notebook')
+let btnVoltarCarrinhoNotebook = document.getElementById('btn-voltar-carrinho-notebook')
+
+let btnAdicionarNoCarrinhoMouse = document.getElementById('btn-adicionar-carrinho-mouse')
+let containerCarrinhoMouse = document.getElementById('carrinho-mouse')
+let btnVoltarCarrinhoMouse = document.getElementById('btn-voltar-carrinho-mouse')
+
+let btnAdicionarNoCarrinhoBola = document.getElementById('btn-adicionar-carrinho-bola')
+let containerCarrinhoBola = document.getElementById('carrinho-bola')
+let btnVoltarCarrinhoBola = document.getElementById('btn-voltar-carrinho-bola')
+
+let btnAdicionarNoCarrinhoRelogio = document.getElementById('btn-adicionar-carrinho-relogio')
+let containerCarrinhoRelogio = document.getElementById('carrinho-relogio')
+let btnVoltarCarrinhoRelogio = document.getElementById('btn-voltar-carrinho-relogio')
+
+let btnAdicionarNoCarrinhoCelularTwo = document.getElementById('btn-adicionar-carrinho-celularTwo')
+let containerCarrinhoCelularTwo = document.getElementById('carrinho-celularTwo')
+let btnVoltarCarrinhoCelularTwo = document.getElementById('btn-voltar-carrinho-celularTwo')
+
+
+let abaItemNoCarrinho = document.getElementById('produto-carrinho')
 class AbaCompraCelular {
     constructor() {
       this.addClickEvent();
@@ -274,22 +306,161 @@ class salvaItemLoja {
 
 class adicionarItemAoCarrinho {
     constructor() {
-        this.addClickEvent();
+      this.addClickEvent();
     }
-
+  
     addClickEvent() {
-        btnAdicionarNoCarrinho.addEventListener("click", () => {
-            if (compraProduto.style.display = 'block') {
-                compraProduto.style.display = 'none';
-                abaItemNoCarrinho.style.display = 'block';
-            }
-        })
-        btnVoltarCarrinho.addEventListener("click", () => {
-            if (compraProduto.style.display = 'none') {
-                compraProduto.style.display = 'block';
-                abaItemNoCarrinho.style.display = 'none';
-            }
-        })
+      btnAdicionarNoCarrinho.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'block';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+  
+      btnAdicionarNoCarrinhoTenis.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoTenis.style.display = 'block';
+        containerCarrinhoCelular.style.display = 'none';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+      
+      btnAdicionarNoCarrinhofone.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoFone.style.display = 'block';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'none';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+
+      btnAdicionarNoCarrinhoNotebook.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoNotebook.style.display = 'block';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'none';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+
+      btnAdicionarNoCarrinhoMouse.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoMouse.style.display = 'block';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'none';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+
+      btnAdicionarNoCarrinhoBola.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoBola.style.display = 'block';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'none';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+      btnAdicionarNoCarrinhoRelogio.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoRelogio.style.display = 'block';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'none';
+        containerCarrinhoCelularTwo.style.display = 'none';
+      });
+      btnAdicionarNoCarrinhoCelularTwo.addEventListener("click", () => {
+        compraProduto.style.display = 'none';
+        abaItemNoCarrinho.style.display = 'block';
+        containerCarrinhoCelularTwo.style.display = 'block';
+        containerCarrinhoRelogio.style.display = 'none';
+        containerCarrinhoBola.style.display = 'none';
+        containerCarrinhoMouse.style.display = 'none';
+        containerCarrinhoNotebook.style.display = 'none';
+        containerCarrinhoFone.style.display = 'none';
+        containerCarrinhoTenis.style.display = 'none';
+        containerCarrinhoCelular.style.display = 'none';
+      });
+  
+    btnVoltarCarrinho.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+    btnVoltarCarrinhoTenis.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+
+    btnVoltarCarrinhoFone.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+    btnVoltarCarrinhoNotebook.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+    btnVoltarCarrinhoMouse.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+    btnVoltarCarrinhoBola.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+    btnVoltarCarrinhoRelogio.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
+    btnVoltarCarrinhoCelularTwo.addEventListener("click", () => {
+        if (compraProduto.style.display = 'none') {
+            compraProduto.style.display = 'block';
+            abaItemNoCarrinho.style.display = 'none';
+        }
+    })
     }
 }
 
