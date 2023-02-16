@@ -60,8 +60,11 @@ let btnAdicionarNoCarrinhoCelularTwo = document.getElementById('btn-adicionar-ca
 let containerCarrinhoCelularTwo = document.getElementById('carrinho-celularTwo')
 let btnVoltarCarrinhoCelularTwo = document.getElementById('btn-voltar-carrinho-celularTwo')
 
-
 let abaItemNoCarrinho = document.getElementById('produto-carrinho')
+
+let finalizaCarrinhoBtn = document.getElementById('finaliza-carrinho-btn')
+let formLogin = document.getElementById('form-login')
+let btnVoltarLogin = document.getElementById('btn-voltar-login')
 class AbaCompraCelular {
     constructor() {
       this.addClickEvent();
@@ -461,8 +464,22 @@ class adicionarItemAoCarrinho {
             abaItemNoCarrinho.style.display = 'none';
         }
     })
+    finalizaCarrinhoBtn.addEventListener('click', () => {
+        if (compraProduto.style.display = 'none') {
+            abaItemNoCarrinho.style.display = 'none';
+            formLogin.style.display = 'flex';
+        }
+    })
+    btnVoltarLogin.addEventListener('click', () => {
+        if (formLogin.style.display = 'flex') {
+            abaItemNoCarrinho.style.display = 'block';
+            formLogin.style.display = 'none';
+        }
+    })
     }
 }
+
+
 
 const abasComprar = {
     AbaCompraCelular,

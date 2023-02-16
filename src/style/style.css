@@ -633,6 +633,40 @@ header {
     border-radius: 5px;
 }
 
+.form-login {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.aba-login {
+    font-size: 20px;
+}
+
+.inputs-login input {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: transparent;
+    width: 340px;
+    height: 30px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: rgb(110, 10, 214);
+    outline: none;
+}
+
+.btn-login button {
+    width: 340px;
+    height: 30px;
+    background: transparent;
+    border-color: rgb(110, 10, 214);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1285px){
 
     .btns-inform {
