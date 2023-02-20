@@ -640,6 +640,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    gap: 10px;
 }
 
 .btn-voltar-login {
@@ -656,6 +657,7 @@ header {
     justify-content: left;
     align-items: left;
     float: left;
+    cursor: pointer;
 }
 
 .aba-login {
@@ -663,8 +665,15 @@ header {
 }
 
 .aba-login h1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
+}
+
+.linha-login {
+    width: 133px;
+    height: 2px;
+    background: gray;
+    border-radius: 1px;
 }
 
 .form-login input {
@@ -684,13 +693,6 @@ header {
     border-color: rgb(110, 10, 214);
 }
 
-/* .form-login label {
-    pointer-events: none;
-    position: absolute;
-    transform: translate(30px,-37px);
-    transition: all .3s ease-out;
-} */
-
 .btn-login button {
     width: 340px;
     height: 30px;
@@ -701,6 +703,31 @@ header {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 25px;
+}
+
+.btn-cadastrar-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+
+.linha-novoUser {
+    width: 430px;
+    height: 1px;
+    background: gray;
+    border-radius: 1px;
+}
+
+.btn-cadastrar-login button {
+    width: 120px;
+    height: 30px;
+    background: rgb(110, 10, 214);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1285px){
