@@ -658,6 +658,7 @@ header {
     align-items: left;
     float: left;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .aba-login {
@@ -753,6 +754,7 @@ header {
     justify-content: left;
     float: left;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .aba-cadastrar h1 {
