@@ -9,12 +9,12 @@ let btnCadastrar = document.getElementById("btn-cadastrar")
 let formLogin = document.getElementById("form-login")
 let formCadastrar = document.getElementById("form-cadastrar")
 
-class CadastrarUsuario {
+class Usuario {
     constructor() {
-        this.addUsuario();
+        this.CadastrarUsuario();
     }
 
-    addUsuario() {
+    CadastrarUsuario() {
         btnCadastrar.addEventListener("click", () => {
             if(inputCadastrarNomeUser.value && inputCadastrarSobrenomeUser.value != "") {
                 let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
@@ -50,7 +50,7 @@ class CadastrarUsuario {
 }
 
 const logarUsuario = {
-    CadastrarUsuario
+    Usuario
 }
 
 export default logarUsuario

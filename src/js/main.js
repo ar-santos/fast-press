@@ -39,4 +39,4 @@ new abasComprar.salvaItemLoja();
 new abasComprar.adicionarItemAoCarrinho();
 
 
-new logarUsuario.CadastrarUsuario();
+new logarUsuario.Usuario();
