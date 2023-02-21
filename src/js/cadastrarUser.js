@@ -6,6 +6,9 @@ let inputObrigatorio = document.getElementById("input-obrigatorio")
 
 let btnCadastrar = document.getElementById("btn-cadastrar")
 
+let formLogin = document.getElementById("form-login")
+let formCadastrar = document.getElementById("form-cadastrar")
+
 class CadastrarUsuario {
     constructor() {
         this.addUsuario();
@@ -32,6 +35,8 @@ class CadastrarUsuario {
 
                 if (inputObrigatorio.style.display = 'flex') {
                     inputObrigatorio.style.display = 'none'
+                    formLogin.style.display = 'flex'
+                    formCadastrar.style.display = 'none'
                 }
 
             }else{
