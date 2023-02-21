@@ -1,6 +1,7 @@
 import funcoesBanner from "./banner.js"
 import avaliacaoClientes from "./star.js"
 import abasComprar from "./purchase.js"
+import logarUsuario from "./cadastrarUser.js"
 
 let btnCarroseLeft = document.getElementById('btn-carrosel-left')
 let btnCarroselRight = document.getElementById('btn-carrosel-right')
@@ -36,3 +37,6 @@ new abasComprar.AbaComprarCelularTwo();
 new abasComprar.BtnVoltarPagina();
 new abasComprar.salvaItemLoja();
 new abasComprar.adicionarItemAoCarrinho();
+
+
+new logarUsuario.CadastrarUsuario();

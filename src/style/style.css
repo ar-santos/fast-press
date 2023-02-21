@@ -799,11 +799,18 @@ header {
     margin-top: 25px;
 }
 
+.input-obrigatorio {
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 12px;
+}
+
 .btn-login-cadastrar {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     gap: 20px;
 }
 
@@ -811,7 +818,7 @@ header {
     display: flex;
     align-items: center;
     width: 400px;
-    height: 2px;
+    height: 1px;
     background: gray;
     border-radius: 1px;
     margin-top: 8px;
