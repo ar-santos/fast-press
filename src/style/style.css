@@ -661,6 +661,13 @@ header {
     background-color: transparent;
 }
 
+.campo-usuario-logado {
+    display: none;
+    text-align: center;
+    color: #58c22e;
+    font-size: 20px;
+}
+
 .aba-login {
     font-size: 20px;
 }
@@ -694,6 +701,13 @@ header {
     border-color: rgb(110, 10, 214);
 }
 
+.campo-obrigatorio-login {
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 12px;
+}
+
 .btn-login button {
     width: 340px;
     height: 30px;
@@ -703,7 +717,7 @@ header {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 18px;
 }
 
 .btn-cadastrar-login {
