@@ -70,7 +70,16 @@ let formCadastrar = document.getElementById('form-cadastrar')
 let btnCadastrarLogin = document.getElementById('btn-criarNovaConta')
 let btnEntrarConta = document.getElementById('btn-entrarConta')
 let btnVoltarCadastrar = document.getElementById('btn-voltar-cadastrar')
+let inputCadastrarNomeUser = document.getElementById("input-nome-cadastrar")
+let inputCadastrarSobrenomeUser = document.getElementById("input-sobrenome-cadastrar")
+let inputCadastrarSenhaUser = document.getElementById("input-senha-cadastrar")
 
+let inputLoginNome = document.getElementById("input-login-nome")
+let inputLoginSenha = document.getElementById("input-login-senha")
+let inputObrigatorio = document.getElementById("input-obrigatorio")
+let campoObrigatorioLogin = document.getElementById("campo-obrigatorio-login")
+let campoUsuarioLogadoLogin = document.getElementById("campo-usuario-logado")
+let campoObrigatorioInput = document.getElementById("campo-obrigatorio-login-input")
 class AbaCompraCelular {
     constructor() {
       this.addClickEvent();
@@ -502,6 +511,106 @@ class adicionarItemAoCarrinho {
     })
     }
 }
+class ValidacaoCamposUsuarioLogado {
+    constructor() {
+        this.campoUsuarioLogado();
+    }
+
+    campoUsuarioLogado(){
+        
+        if (campoUsuarioLogadoLogin.style.display = 'none') {
+            campoUsuarioLogadoLogin.style.display = 'flex';
+            campoObrigatorioInput.style.display = 'none';
+            campoObrigatorioLogin.style.display = 'none';
+            inputLoginSenha.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+            inputLoginNome.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+            inputLoginNome.value = ''
+            inputLoginSenha.value = ''
+        }
+    }
+
+}
+class ValidacaoCamposObrigatorio{
+    constructor() {
+        this.campoObrigatorioLogin();
+    }
+
+   campoObrigatorioLogin(){
+        
+        if (campoObrigatorioLogin.style.display = 'none') {
+            campoObrigatorioLogin.style.display = 'flex';
+            campoObrigatorioInput.style.display = 'none';
+            campoUsuarioLogadoLogin.style.display = 'none';
+            inputLoginNome.focus();
+            inputLoginSenha.style.borderColor = 'red';
+            inputLoginNome.style.borderColor = 'red';
+        }
+
+        inputLoginNome.value = ''
+        inputLoginSenha.value = ''
+    }
+}
+class ValidacaoCamposObrigatorioInput{
+    constructor() {
+        this.campoObrigatorioLogin();
+    }
+
+   campoObrigatorioLogin(){
+        if (campoObrigatorioInput.style.display = 'none') {
+            campoObrigatorioInput.style.display = 'flex';
+
+            if (inputLoginNome.value === '') {
+                inputLoginNome.focus();
+                inputLoginNome.style.borderColor = 'red';
+              } else if (inputLoginSenha.value === '') {
+                inputLoginSenha.focus();
+                inputLoginSenha.style.borderColor = 'red';
+            }
+
+            campoObrigatorioLogin.style.display = 'none';
+            campoUsuarioLogadoLogin.style.display = 'none';
+        }
+    }
+}
+class trocarAbaCadastroEntrada{
+    constructor() {
+        this.transicaoAba();
+    }
+
+    transicaoAba() {
+        if (inputObrigatorio.style.display = 'flex') {
+            inputObrigatorio.style.display = 'none'
+            formLogin.style.display = 'flex'
+            formCadastrar.style.display = 'none'
+            inputCadastrarNomeUser.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+            inputCadastrarSobrenomeUser.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+            inputCadastrarSenhaUser.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+        }
+    }
+}
+class validacaoCamposCadastro{
+    constructor() {
+        this.validaoCampo();
+    }
+
+    validaoCampo() {
+        if (inputObrigatorio.style.display = 'none') {
+
+            if (inputCadastrarNomeUser.value === '') {
+                inputCadastrarNomeUser.focus();
+                inputCadastrarNomeUser.style.borderColor = 'red';
+              } else if (inputCadastrarSobrenomeUser.value === '') {
+                inputCadastrarSobrenomeUser.focus();
+                inputCadastrarSobrenomeUser.style.borderColor = 'red';
+            } else if (inputCadastrarSenhaUser.value === '') {
+                inputCadastrarSenhaUser.focus();
+                inputCadastrarSenhaUser.style.borderColor = 'red';
+            } 
+
+            inputObrigatorio.style.display = 'flex'
+        }
+    }
+}
 
 const abasComprar = {
     AbaCompraCelular,
@@ -515,6 +624,11 @@ const abasComprar = {
     BtnVoltarPagina,
     salvaItemLoja,
     adicionarItemAoCarrinho,
+    ValidacaoCamposUsuarioLogado,
+    ValidacaoCamposObrigatorio,
+    ValidacaoCamposObrigatorioInput,
+    trocarAbaCadastroEntrada,
+    validacaoCamposCadastro,
 }
 
 export default abasComprar

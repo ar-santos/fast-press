@@ -665,7 +665,14 @@ header {
     display: none;
     text-align: center;
     color: #58c22e;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.campo-obrigatorio-login-input {
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 11.8px;
 }
 
 .aba-login {
