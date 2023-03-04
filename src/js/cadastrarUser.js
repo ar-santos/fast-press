@@ -8,6 +8,12 @@ let btnCadastrar = document.getElementById("btn-cadastrar")
 let inputLoginNome = document.getElementById("input-login-nome")
 let inputLoginSenha = document.getElementById("input-login-senha")
 let btnEntrar = document.getElementById("btn-entrar")
+
+let campoObrigatorioNome = document.getElementById("campo-obrigatorio-login-input")
+let campoObrigatorioSenha = document.getElementById("campo-obrigatorio-login-senha")
+
+let campoObrigatorioLogin = document.getElementById("campo-obrigatorio-login")
+
 class Usuario {
     constructor() {
         this.CadastrarUsuario();
@@ -55,32 +61,44 @@ class Usuario {
 
             listaUsuarioCadastrado = JSON.parse(localStorage.getItem('listaUser'))
 
-            if (inputLoginNome.value.length > 0 && inputLoginSenha.value.length > 0) {
-                listaUsuarioCadastrado.forEach((item) => {
-                    if(inputLoginNome.value == item.nomeCad && inputLoginSenha.value == item.senhaCad){
-
-                        userValid = {
-                            nome: item.nomeCad,
-                            sobrenome: item.sobrenomeCad,
-                            senha: item.senhaCad
-                        }
-                    }
-                })
-
-                if(inputLoginNome.value == userValid.nome && inputLoginSenha.value == userValid.senha){
-                    
-                    new abasComprar.ValidacaoCamposUsuarioLogado();
-
-                }else {
-
-                    new abasComprar.ValidacaoCamposObrigatorio();
-                    
-                }
+            if(inputLoginNome.value.length < 3){
+                campoObrigatorioNome.style.display = 'flex'
+                inputLoginNome.focus()
+                campoObrigatorioLogin.style.display = 'none'
+                inputLoginNome.style.borderColor = 'red';
+                return;
             }else{
-
-                new abasComprar.ValidacaoCamposObrigatorioInput();
-
+                inputLoginNome.style.borderColor = '#58c22e';
+                campoObrigatorioNome.style.display = 'none'
             }
+            
+            if(inputLoginSenha.value.length < 8){
+                campoObrigatorioSenha.style.display = 'flex';
+                inputLoginSenha.focus()
+                campoObrigatorioLogin.style.display = 'none'
+                inputLoginSenha.style.borderColor = 'red';
+                return;
+            }else{
+                inputLoginSenha.style.borderColor = '#58c22e';
+                campoObrigatorioSenha.style.display = 'none'
+            }
+            
+            listaUsuarioCadastrado.forEach((item) => {
+                if(inputLoginNome.value == item.nomeCad && inputLoginSenha.value == item.senhaCad){
+                    userValid = {
+                        nome: item.nomeCad,
+                        sobrenome: item.sobrenomeCad,
+                        senha: item.senhaCad
+                    }
+                }
+            })
+            
+            if(inputLoginNome.value == userValid.nome && inputLoginSenha.value == userValid.senha){
+                new abasComprar.ValidacaoCamposUsuarioLogado();
+            }else{
+                new abasComprar.ValidacaoCamposObrigatorio();
+            }
+            
 
         })
     }

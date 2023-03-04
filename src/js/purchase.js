@@ -80,6 +80,10 @@ let inputObrigatorio = document.getElementById("input-obrigatorio")
 let campoObrigatorioLogin = document.getElementById("campo-obrigatorio-login")
 let campoUsuarioLogadoLogin = document.getElementById("campo-usuario-logado")
 let campoObrigatorioInput = document.getElementById("campo-obrigatorio-login-input")
+
+let campoObrigatorioNome = document.getElementById("campo-obrigatorio-login-input")
+let campoObrigatorioSenha = document.getElementById("campo-obrigatorio-login-senha")
+
 class AbaCompraCelular {
     constructor() {
       this.addClickEvent();
@@ -495,6 +499,13 @@ class adicionarItemAoCarrinho {
         if (formCadastrar.style.display = 'none') {
             formCadastrar.style.display = 'flex';
             formLogin.style.display = 'none';
+            campoObrigatorioNome.style.display = 'none'
+            campoObrigatorioSenha.style.display = 'none'
+            campoObrigatorioLogin.style.display = 'none'
+            inputLoginSenha.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+            inputLoginNome.style.borderColor = 'rgba(0, 0, 0, 0.074)';
+            inputLoginNome.value = ''
+            inputLoginSenha.value = ''
         }
     })
     btnVoltarCadastrar.addEventListener('click', () => {

@@ -672,7 +672,14 @@ header {
     display: none;
     text-align: center;
     color: red;
-    font-size: 11.8px;
+    font-size: 11px;
+}
+
+.campo-obrigatorio-login-senha {
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 11px;
 }
 
 .aba-login {
