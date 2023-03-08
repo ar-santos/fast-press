@@ -589,8 +589,7 @@ class trocarAbaCadastroEntrada{
     }
 
     transicaoAba() {
-        if (inputObrigatorio.style.display = 'flex') {
-            inputObrigatorio.style.display = 'none'
+        if (formCadastrar.style.display = 'flex') {
             formLogin.style.display = 'flex'
             formCadastrar.style.display = 'none'
             inputCadastrarNomeUser.style.borderColor = 'rgba(0, 0, 0, 0.074)';
@@ -599,29 +598,29 @@ class trocarAbaCadastroEntrada{
         }
     }
 }
-class validacaoCamposCadastro{
-    constructor() {
-        this.validaoCampo();
-    }
+// class validacaoCamposCadastro{
+//     constructor() {
+//         this.validaoCampo();
+//     }
 
-    validaoCampo() {
-        if (inputObrigatorio.style.display = 'none') {
+//     validaoCampo() {
+//         if (inputObrigatorio.style.display = 'none') {
 
-            if (inputCadastrarNomeUser.value === '') {
-                inputCadastrarNomeUser.focus();
-                inputCadastrarNomeUser.style.borderColor = 'red';
-              } else if (inputCadastrarSobrenomeUser.value === '') {
-                inputCadastrarSobrenomeUser.focus();
-                inputCadastrarSobrenomeUser.style.borderColor = 'red';
-            } else if (inputCadastrarSenhaUser.value === '') {
-                inputCadastrarSenhaUser.focus();
-                inputCadastrarSenhaUser.style.borderColor = 'red';
-            } 
+//             if (inputCadastrarNomeUser.value === '') {
+//                 inputCadastrarNomeUser.focus();
+//                 inputCadastrarNomeUser.style.borderColor = 'red';
+//               } else if (inputCadastrarSobrenomeUser.value === '') {
+//                 inputCadastrarSobrenomeUser.focus();
+//                 inputCadastrarSobrenomeUser.style.borderColor = 'red';
+//             } else if (inputCadastrarSenhaUser.value === '') {
+//                 inputCadastrarSenhaUser.focus();
+//                 inputCadastrarSenhaUser.style.borderColor = 'red';
+//             } 
 
-            inputObrigatorio.style.display = 'flex'
-        }
-    }
-}
+//             inputObrigatorio.style.display = 'flex'
+//         }
+//     }
+// }
 
 const abasComprar = {
     AbaCompraCelular,
@@ -639,7 +638,6 @@ const abasComprar = {
     ValidacaoCamposObrigatorio,
     ValidacaoCamposObrigatorioInput,
     trocarAbaCadastroEntrada,
-    validacaoCamposCadastro,
 }
 
 export default abasComprar

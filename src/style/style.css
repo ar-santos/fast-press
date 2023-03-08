@@ -827,11 +827,23 @@ header {
     margin-top: 25px;
 }
 
-.input-obrigatorio {
+.campo-obrigatorio-cadastro-nome {
     display: none;
     text-align: center;
     color: red;
-    font-size: 12px;
+    font-size: 11px;
+}
+.campo-obrigatorio-cadastro-sobrenome {
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 11px;
+}
+.campo-obrigatorio-cadastro-senha {
+    display: none;
+    text-align: center;
+    color: red;
+    font-size: 11px;
 }
 
 .btn-login-cadastrar {
