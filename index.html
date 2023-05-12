@@ -730,7 +730,7 @@
                                 <h1>Quantidade</h1>
                             </div>
 
-                            <div class="produtoCarrinho">
+                            <div class="produtoCarrinho" id="produtoCelularIphone">
                                 <div class="left-carrinho">
                                     <div class="Produtos-carrinho-compra">
                                         <div class="img-carrinho-compra">
@@ -742,25 +742,24 @@
                                 <div class="right-side-carrinho-compra">
 
                                     <div class="nome-produto-carrinho">
-                                        <h1>Apple iPhone 14 (256 GB) – Cinza-Escuro</h1>   
+                                        <h1 id="descriptioIphone"></h1>   
                                     </div>                                    
                                     
-                                    
                                     <div class="fabricantes-produto">
-                                        <h3>Vendido por <h3 class="nomeFabricante">Fast Press</h3></h3>
+                                        <h3 id="nomeVendedora"><h3 class="nomeFabricante" id="nomeFabricante"></h3></h3>
                                     </div>
                                     
                                     <div class="fabricantes-produto">
-                                        <h3>Entregue por <h3 class="nomeFabricante">Fast Press</h3></h3>
+                                        <h3 id="nomeEntregar"><h3 class="nomeFabricante" id="NomeTransportadora"></h3></h3>
                                     </div>
                                 </div>  
 
                                 <div class="preco-carrinho">
-                                    <h4 class="preco-alto">R$ 4.999,00</h4>
-                                    <h3 class="preco-baixo-carrinho">R$ 3.249,00</h3>
+                                    <h4 class="preco-alto" id="price"></h4>
+                                    <h3 class="preco-baixo-carrinho" id="promotion"></h3>
                                 </div>
 
-                                <select class="quantity-carrinho">
+                                <select class="quantity-carrinho" id="stock">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -771,7 +770,7 @@
                             </div>
 
                             <div class="finalizar-compra" >
-                                <h1>Subtotal: R$ 3.249,00</h1>
+                                <h1 id="subTotal"></h1>
                                 <button id="finaliza-carrinho-btn">Continuar</button>
                             </div>
                             

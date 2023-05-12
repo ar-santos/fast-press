@@ -2,6 +2,7 @@ import funcoesBanner from "./banner.js"
 import avaliacaoClientes from "./star.js"
 import abasComprar from "./purchase.js"
 import logarUsuario from "./cadastrarUser.js"
+import { carregaDescricaoIphone } from '../data/product_data.js'
 
 let btnCarroseLeft = document.getElementById('btn-carrosel-left')
 let btnCarroselRight = document.getElementById('btn-carrosel-right')
@@ -25,6 +26,8 @@ function executaFuncaoBtnRight() {
 btnCarroselRight.addEventListener('click', executaFuncaoBtnRight)
 
 avaliacaoClientes()
+
+carregaDescricaoIphone();
 
 new abasComprar.AbaCompraCelular();
 new abasComprar.AbaCompraTenis();
