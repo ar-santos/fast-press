@@ -1,6 +1,6 @@
 # Fast Press 🛒
 
-Site de loja desenvolvido com HTML, CSS e JavaScript.
+Site de loja desenvolvido com HTML, CSS e JavaScript para testar minhas habilidades.
 
 🔗 **Demo ao Vivo**: [Fast Press](https://ar-santos.github.io/fast-press/)
 
