@@ -242,14 +242,15 @@ header {
     gap: 2rem 3rem;
     padding: 2rem 0 0 0rem;
     align-items: center;
-    cursor: pointer;
     border: 0px solid #ccc;
+    margin-bottom: 70px;
 }
 
 .produtos-container {
     width: 100%;   
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .porcentagemDeDesconto {
